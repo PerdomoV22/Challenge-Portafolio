@@ -7,8 +7,8 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-    --cor-de-fondo-menu: #000;
-    --cor-de-fundo: #F5F5F5;
+    --cor-de-fondo-menu: #20202380;
+    --cor-de-fundo: #000000;
     --cor-de-link: #ffffff;
     --cor-de-li-menu: #fff;
 }
@@ -17,15 +17,17 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    margin: 0;
+    margin: auto;
     padding: 0;
     line-height: 1;
+    width: 100%;
 }
 ol, ul,li {
     list-style: none;
 }
-a{
+a, p, h2, h3{
     text-decoration: none;
+    font-family: "Fjalla One", sans-serif;
     color: var(--cor-de-link);
 }
 
@@ -42,7 +44,6 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
-
 section.menu{
     display: flex;
     justify-content: space-between; 
@@ -51,6 +52,7 @@ section.menu{
     width: 100%;
     height: 70px;
     background-color: var(--cor-de-fondo-menu);
+    z-index: 2;
     padding: 5px 70px;
 }
 
@@ -136,15 +138,81 @@ section.menu{
 }
 
 /*Sección Title*/
-
 section.title{
+    margin-top: 80px;
+    padding: 20px 70px;
+}
 
+.title .title__div {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+.title .title__div img {
+    padding-top: 30px;
+    width: 15%;
+}
+
+.title__container {
+    text-align: center;
+}
+
+.title__container .title__bio {
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.title__container span {
+    color: red;
+}
+
+.title__container .title__descripcion, .title__subsection {
+    width: 700px;
+    padding-top: 1.3rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.title__network {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 
 /*Sección About*/
 
 section.about{
+    background: #060606;
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px;
 
+}
+
+.about__container .about__title {
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: red;
+    padding-bottom: 0.2rem;
+}
+
+.about__container .about__paragraph {
+    padding-top: 1.3rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*Sección Hobbies*/
+
+section.skills{
+    
 }
 
 /*Sección Hobbies*/

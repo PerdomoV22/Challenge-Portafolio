@@ -186,12 +186,11 @@ section.title{
 /*Sección About*/
 
 section.about{
-    background: #060606;
+    background: #141414;
     width: 1000px;
     height: auto;
     margin: 20px auto;
     padding: 30px;
-
 }
 
 .about__container .about__title {
@@ -209,16 +208,37 @@ section.about{
     font-weight: 300;
 }
 
-/*Sección Hobbies*/
+/*Sección Skills*/ /*Sección Hobbies*/
 
-section.skills{
-    
+section.skills, section.hobbies {
+    width: 1000px;
+    padding: 30px;
+    margin: 0 auto;
 }
 
-/*Sección Hobbies*/
+.skills__title, .hobbies__title{
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: red;
+    padding-bottom: 0.2rem;
+    text-align: center;
+}
 
-section.hobbies{
-    
+.skills__line, .hobbies__line {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+.skills__box, .hobbies__box {
+    width: 80px;
+    height: auto;
+}
+
+.skills__box li img, .hobbies li img {
+    width: 80%;
 }
 
 /* Experiencia Académica*/

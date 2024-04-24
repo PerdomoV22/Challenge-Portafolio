@@ -25,7 +25,7 @@ body {
 ol, ul,li {
     list-style: none;
 }
-a, p, h2, h3{
+a, p, h2, h3, h4{
     text-decoration: none;
     font-family: "Fjalla One", sans-serif;
     color: var(--cor-de-link);
@@ -42,6 +42,16 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
+
+/* Titulos*/
+.about__container .about__title, .academic__title {
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: red;
+    padding-bottom: 0.2rem;
+}
+
 
 /*Sección Menu*/
 section.menu{
@@ -186,19 +196,11 @@ section.title{
 /*Sección About*/
 
 section.about{
-    background: #141414;
+    background: #070707;
     width: 1000px;
     height: auto;
     margin: 20px auto;
     padding: 30px;
-}
-
-.about__container .about__title {
-    font-family: "Fjalla One", sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    color: red;
-    padding-bottom: 0.2rem;
 }
 
 .about__container .about__paragraph {
@@ -244,7 +246,33 @@ section.skills, section.hobbies {
 /* Experiencia Académica*/
 
 section.academic{
+    background: #070707;
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px;
+}
 
+.academic .academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.academic .academic__courses .academic__courses__list {
+    width: 200px;
+    height: auto;
+}
+
+.academic__courses__item__img {
+    width: 80%;
+    height: auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.academic .academic__courses .academic__courses__box .academic__courses__list li p {
+    padding-top: 0.5rem;
 }
 
 /* experiencia*/
@@ -262,7 +290,7 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?

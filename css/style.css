@@ -635,6 +635,16 @@ section.footer{
     margin-left: 2px;
     color: #fff;
 }
+
+.respuesta_error {
+    color: #666;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: right;
+}
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 

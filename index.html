@@ -241,24 +241,28 @@
                         <span class="title_desc">No dude en ponerse en contacto conmigo enviando el siguiente formulario y me comunicaré con usted lo antes posible.</span>
                     </h2>
                     <div class="formcontato__cuerpo">
-                        <form class="formcontato__form" name="form">
+                        <form class="formcontato__form" name="form" id="formulario-contacto">
                             <div class="formulario_items">
-                                <label class="formulario_items-label" for="name">Nombre</label>
-                                <input class="formulario_items-input" type="text" name="nombre" placeholder="Ingrese Su Nombre">
+                                <label class="formulario_items-label" for="name" >Nombre</label>
+                                <input id="nombre" class="formulario_items-input" type="text" name="nombre" placeholder="Ingrese Su Nombre" required>
+                                <div id="error-nombre" class="respuesta_error"></div>
                             </div>
                             <div class="formulario_items">
                                 <label class="formulario_items-label" for="email">Email</label>
-                                <input class="formulario_items-input" type="email" name="email" placeholder="Ingrese Su E-mail">
+                                <input id="email" class="formulario_items-input" type="email" name="email" placeholder="Ingrese Su E-mail" required>
+                                <div id="error-email" class="respuesta_error"></div>
                             </div>
                             <div class="formulario_items">
                                 <label class="formulario_items-label" for="asunto">Asunto</label>
-                                <input class="formulario_items-input" type="text" name="asunto" placeholder="Ingrese El Asunto">
+                                <input id="asunto" class="formulario_items-input" type="text" name="asunto" placeholder="Ingrese El Asunto" required>
+                                <div id="error-asunto" class="respuesta_error"></div>
                             </div>
                             <div class="formulario_items">
                                 <label class="formulario_items-label" for="mensaje">Mensaje</label>
-                                <textarea class="formulario_items-input" rows="10" cols="30" id="mensagem" name="mensaje" placeholder="Ingrese Su Mensaje"></textarea>
+                                <textarea id="mensaje" class="formulario_items-input" rows="10" cols="30" id="mensagem" name="mensaje" placeholder="Ingrese Su Mensaje" required></textarea>
+                                <div id="error-mensaje" class="respuesta_error"></div>
                             </div>
-                            <button type="submit" class="boton boton-tema contacto_boton">Enviar mensaje</button>
+                            <button type="submit" class="boton boton-tema contacto_boton" id="enviar" onclick="validarFormulario()">Enviar mensaje</button>
                         </form>
                     </div>
                 </div>

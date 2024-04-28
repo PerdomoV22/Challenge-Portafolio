@@ -21,19 +21,35 @@
         <section class="menu">
             <header class="menu__header">
                 <div class="menu__contenido">
-                    <div class="menu_logo">
-                        <img src="assets\vector.png">
+                    <div class="menu__contenido-info">
+                        <div class="menu_logo">
+                            <img src="assets\vector.png">
+                        </div>
+                        <h3 class="menu__title">Juan Perdomo</h3>
                     </div>
-                    <h3 class="menu__title">Juan Perdomo</h3>
+                    <div class="menu__contenido-links">
+                        <ul class="menu__list">
+                            <li class="menu__list__item"><a class="menu-enlace" href="#">INICIO</a></li>
+                            <li class="menu__list__item"><a class="menu-enlace" href="#sobre-mi">SOBRE MI</a></li>
+                            <li class="menu__list__item"><a class="menu-enlace" href="#xp">PROYECTOS</a></li>
+                            <li class="menu__list__item"><a class="menu-enlace" href="#contacto">CONTACTO</a></li>
+                        </ul>
+                        <div class="menu__contenido-links-imagenes">
+                            <img src="assets/menu_icon.png" alt="icon de menu" class="menu_contenido-menu">
+                            <img src="assets/x_icon.png" alt="icon de cerras" class="menu_contenido-cerrar d-none">
+                        </div>
+                    </div>
                 </div>
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__list__item"><a class="menu-enlace" href="#sobre-mi">INICIO</a></li>
-                        <li class="menu__list__item"><a class="menu-enlace" href="#skills">SOBRE MI</a></li>
-                        <li class="menu__list__item"><a class="menu-enlace" href="#xp">PROYECTOS</a></li>
-                        <li class="menu__list__item"><a class="menu-enlace" href="#contacto">CONTACTO</a></li>
-                    </ul>
-                </nav>
+                <div class="menu__sub-nav">
+                    <div class="menu__sub-nav-contenido">
+                        <ul class="menu__list">
+                            <li class="menu__list__item-sub"><a class="menu-enlace" href="#">INICIO</a></li>
+                            <li class="menu__list__item-sub"><a class="menu-enlace" href="#sobre-mi">SOBRE MI</a></li>
+                            <li class="menu__list__item-sub"><a class="menu-enlace" href="#xp">PROYECTOS</a></li>
+                            <li class="menu__list__item-sub"><a class="menu-enlace" href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
             </header>
         </section>
 
@@ -262,7 +278,7 @@
                                 <textarea id="mensaje" class="formulario_items-input" rows="10" cols="30" id="mensagem" name="mensaje" placeholder="Ingrese Su Mensaje" required></textarea>
                                 <div id="error-mensaje" class="respuesta_error"></div>
                             </div>
-                            <button type="submit" class="boton boton-tema contacto_boton" id="enviar" onclick="validarFormulario()">Enviar mensaje</button>
+                            <button type="submit" class="boton boton-tema contacto_boton" id="enviar" onclick="validarFormulario()">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -298,5 +314,6 @@
     </div>
     <!-- Script del documento JavaScript -->
     <script src="validacion.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
